@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#tabuleiro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#tabuleiro-linha1,
+#tabuleiro-linha2,
+#tabuleiro-linha3 {
+	border: 1px solid blue;
+	margin: 5px;
+}
+
+input {
+	width: 30px;
+	height: 30px;
+}
