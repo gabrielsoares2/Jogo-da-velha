@@ -2,44 +2,45 @@
 <html lang='pt-br'>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="style.css">
 	<title>Jogo da Velha</title>
 </head>
-<body></body>
+<body>
 
-	<div id='container'>
-		
-		<div id='tabuleiro'>
-			
-			<div id='tabuleiro-linha1'>
+	<header></header>
+	<main class="container">
 
-				<input type="text" class='linha1-espaço1'>
-				<input type="text" class='linha1-espaço2'>
-				<input type="text" class='linha1-espaço3'>
+		<h1 class="titulo">Jogo da velha</h1>
 
-			</div>
+		<section class="apresentacao">
+			<input type="text" class="celula" id="celula-1" disabled>
+			<input type="text" class="celula" id="celula-2" disabled>
+			<input type="text" class="celula" id="celula-3" disabled>
+			<input type="text" class="celula" id="celula-4" disabled>
+			<input type="text" class="celula" id="celula-5" disabled>
+			<input type="text" class="celula" id="celula-6" disabled>
+			<input type="text" class="celula" id="celula-7" disabled>
+			<input type="text" class="celula" id="celula-8" disabled>
+			<input type="text" class="celula" id="celula-9" disabled>
+		</section>
 
-			<div id='tabuleiro-linha2'>
+		<section class="resultado">
+			<p id="res">Resultado</p>
+		</section>
 
-				<input type="text" class='linha2-espaço1'>
-				<input type="text" class='linha2-espaço2'>
-				<input type="text" class='linha2-espaço3'>
+		<section class="botoes">
 
-			</div>
+			<input id="iniciar" onclick="iniciarJogo()" class="botoes-click" type="button" value="Iniciar Jogo">
+			<input id="reiniciar" onclick="novoJogo()" class="botoes-click" type="button" value="Novo Jogo" disabled>
 
-			<div id='tabuleiro-linha3'>
+		</section>
 
-				<input type="text" class='linha3-espaço1'>
-				<input type="text" class='linha3-espaço2'>
-				<input type="text" class='linha3-espaço3'>
+	</main>
+	<footer class="rodape">
+		<p>Desenvolvido por Gabriel</p>
+	</footer>
 
-			</div>
-
-		</div>
-
-	</div>
-
-	<script src="teste.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>

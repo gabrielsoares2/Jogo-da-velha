@@ -1,33 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+
+	--font-titulo: "Kode Mono", monospace;
+	--font-botao: "Pixelify Sans", sans-serif;
+
+
+	--cor-fonte: whitesmoke;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
-#container {
+.container {
 	box-sizing: border-box;
+	height: 100vh;
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	background-color: lightslategray;
+	background-image: url("https://wallpaperwaifu.com/wp-content/uploads/2021/08/arcade-gamer-pixel-thumb.jpg");
+	background-position: center;
+	background-size: cover;
+	gap: 1rem;
 }
 
-#tabuleiro {
-	display: flex;
-	flex-direction: column;
+.titulo {
+	font-family: var(--font-titulo);
+	color: var(--cor-fonte);
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.apresentacao {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: repeat(3);
+	grid-template-rows: repeat(3);
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	border: solid 1px;
 }
 
-#tabuleiro-linha1,
-#tabuleiro-linha2,
-#tabuleiro-linha3 {
-	border: 1px solid blue;
-	margin: 5px;
+.celula {
+	border: solid 1px;
+	height: 3rem;
+	width: 4rem;
+	text-align: center;
+	font-family: var(--font-botao);
+	font-size: 1.2rem;
 }
 
-input {
-	width: 30px;
-	height: 30px;
+#celula-1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+#celula-2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+#celula-3 {
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
+}
+
+#celula-4 {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+
+#celula-5 {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+#celula-6 {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+}
+
+#celula-7 {
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+}
+
+#celula-8 {
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+}
+
+#celula-9 {
+	grid-column: 3 / 4;
+	grid-row: 3 / 4;
+}
+
+.resultado {
+	font-family: var(--font-botao);
+	font-size: 1.5rem;
+	color: var(--cor-fonte);
+}
+
+.botoes-click {
+	font-family: var(--font-botao);
+	font-weight: 400;
+	font-size: 1.2rem;
+	padding: 5px;
+	color: var(--cor-fonte);
+	background-color: black;
+	cursor: pointer;
+}
+
+.botoes-click:disabled{
+	background-color: pink;
+	cursor: not-allowed;
+}
+
+.rodape {
+	font-family: var(--font-titulo);
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+@media(max-width: 1000px){
+
+
+
 }
