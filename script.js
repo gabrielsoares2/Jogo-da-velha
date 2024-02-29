@@ -8,8 +8,8 @@ let celula;
 let jogador;
 let maquina;
 let resultado = document.getElementById('res');
-const corVitoria = "lightblue";
-const corDerrota = "lightcoral";
+const corVitoria = "#3559E0";
+const corDerrota = "#D24545";
 const corDaCelula = "white";
 
 function iniciarJogo () {
@@ -134,31 +134,49 @@ function linha(){
         tabela[0][0].style.backgroundColor = corVitoria;
         tabela[0][1].style.backgroundColor = corVitoria;
         tabela[0][2].style.backgroundColor = corVitoria;
+        tabela[0][0].style.color = corDaCelula;
+        tabela[0][1].style.color = corDaCelula;
+        tabela[0][2].style.color = corDaCelula;
         resultado.innerHTML = "Você ganhou";
     } else if(tabela[1][0].value === "X" && tabela[1][1].value === "X" && tabela[1][2].value === "X") {
         tabela[1][0].style.backgroundColor = corVitoria;
         tabela[1][1].style.backgroundColor = corVitoria;
         tabela[1][2].style.backgroundColor = corVitoria;
+        tabela[1][0].style.color = corDaCelula;
+        tabela[1][1].style.color = corDaCelula;
+        tabela[1][2].style.color = corDaCelula;
         resultado.innerHTML = "Você ganhou";
     } else if(tabela[2][0].value === "X" && tabela[2][1].value === "X" && tabela[2][2].value === "X") {
         tabela[2][0].style.backgroundColor = corVitoria;
         tabela[2][1].style.backgroundColor = corVitoria;
         tabela[2][2].style.backgroundColor = corVitoria;
+        tabela[2][0].style.color = corDaCelula;
+        tabela[2][1].style.color = corDaCelula;
+        tabela[2][2].style.color = corDaCelula;
         resultado.innerHTML = "Você ganhou";
     } else if(tabela[0][0].value === "O" && tabela[0][1].value === "O" && tabela[0][2].value === "O") {
         tabela[0][0].style.backgroundColor = corDerrota;
         tabela[0][1].style.backgroundColor = corDerrota;
         tabela[0][2].style.backgroundColor = corDerrota;
+        tabela[0][0].style.color = corDaCelula;
+        tabela[0][1].style.color = corDaCelula;
+        tabela[0][2].style.color = corDaCelula;
         resultado.innerHTML = "Você perdeu";
     } else if(tabela[1][0].value === "O" && tabela[1][1].value === "O" && tabela[1][2].value === "O") {
         tabela[1][0].style.backgroundColor = corDerrota;
         tabela[1][1].style.backgroundColor = corDerrota;
         tabela[1][2].style.backgroundColor = corDerrota;
+        tabela[1][0].style.color = corDaCelula;
+        tabela[1][1].style.color = corDaCelula;
+        tabela[1][2].style.color = corDaCelula;
         resultado.innerHTML = "Você perdeu";
     } else if(tabela[2][0].value === "O" && tabela[2][1].value === "O" && tabela[2][2].value === "O") {
         tabela[2][0].style.backgroundColor = corDerrota;
         tabela[2][1].style.backgroundColor = corDerrota;
         tabela[2][2].style.backgroundColor = corDerrota;
+        tabela[2][0].style.color = corDaCelula;
+        tabela[2][1].style.color = corDaCelula;
+        tabela[2][2].style.color = corDaCelula;
         resultado.innerHTML = "Você perdeu";
     }
 };
@@ -168,31 +186,49 @@ function coluna(){
         tabela[0][0].style.backgroundColor = corVitoria;
         tabela[1][0].style.backgroundColor = corVitoria;
         tabela[2][0].style.backgroundColor = corVitoria;
+        tabela[0][0].style.color = corDaCelula;
+        tabela[1][0].style.color = corDaCelula;
+        tabela[2][0].style.color = corDaCelula;
         resultado.innerHTML = "Você ganhou";
     } else if(tabela[0][1].value === "X" && tabela[1][1].value === "X" && tabela[2][1].value === "X") {
         tabela[0][1].style.backgroundColor = corVitoria;
         tabela[1][1].style.backgroundColor = corVitoria;
         tabela[2][1].style.backgroundColor = corVitoria;
+        tabela[0][1].style.color = corDaCelula;
+        tabela[1][1].style.color = corDaCelula;
+        tabela[2][1].style.color = corDaCelula;
         resultado.innerHTML = "Você ganhou";
     } else if(tabela[0][2].value === "X" && tabela[1][2].value === "X" && tabela[2][2].value === "X") {
         tabela[0][2].style.backgroundColor = corVitoria;
         tabela[1][2].style.backgroundColor = corVitoria;
         tabela[2][2].style.backgroundColor = corVitoria;
+        tabela[0][2].style.color = corDaCelula;
+        tabela[1][2].style.color = corDaCelula;
+        tabela[2][2].style.color = corDaCelula;
         resultado.innerHTML = "Você ganhou";
     } else if(tabela[0][0].value === "O" && tabela[1][0].value === "O" && tabela[2][0].value === "O") {
         tabela[0][0].style.backgroundColor = corDerrota;
         tabela[1][0].style.backgroundColor = corDerrota;
         tabela[2][0].style.backgroundColor = corDerrota;
+        tabela[0][0].style.color = corDaCelula;
+        tabela[1][0].style.color = corDaCelula;
+        tabela[2][0].style.color = corDaCelula;
         resultado.innerHTML = "Você perdeu";
     } else if(tabela[0][1].value === "O" && tabela[1][1].value === "O" && tabela[2][1].value === "O") {
         tabela[0][1].style.backgroundColor = corDerrota;
         tabela[1][1].style.backgroundColor = corDerrota;
         tabela[2][1].style.backgroundColor = corDerrota;
+        tabela[0][1].style.color = corDaCelula;
+        tabela[1][1].style.color = corDaCelula;
+        tabela[2][1].style.color = corDaCelula;
         resultado.innerHTML = "Você perdeu";
     } else if(tabela[0][2].value === "O" && tabela[1][2].value === "O" && tabela[2][2].value === "O") {
         tabela[0][2].style.backgroundColor = corDerrota;
         tabela[1][2].style.backgroundColor = corDerrota;
         tabela[2][2].style.backgroundColor = corDerrota;
+        tabela[0][2].style.color = corDaCelula;
+        tabela[1][2].style.color = corDaCelula;
+        tabela[2][2].style.color = corDaCelula;
         resultado.innerHTML = "Você perdeu";
     }
 };
@@ -202,21 +238,33 @@ function diagonal(){
         tabela[0][0].style.backgroundColor = corVitoria;
         tabela[1][1].style.backgroundColor = corVitoria;
         tabela[2][2].style.backgroundColor = corVitoria;
+        tabela[0][0].style.color = corDaCelula;
+        tabela[1][1].style.color = corDaCelula;
+        tabela[2][2].style.color = corDaCelula;
         resultado.innerHTML = "Você ganhou";
     } else if(tabela[0][2].value === "X" && tabela[1][1].value === "X" && tabela[2][0].value === "X"){
         tabela[0][2].style.backgroundColor = corVitoria;
         tabela[1][1].style.backgroundColor = corVitoria;
         tabela[2][0].style.backgroundColor = corVitoria;
+        tabela[0][2].style.color = corDaCelula;
+        tabela[1][1].style.color = corDaCelula;
+        tabela[2][0].style.color = corDaCelula;
         resultado.innerHTML = "Você ganhou";
     } else if(tabela[0][0].value === "O" && tabela[1][1].value === "O" && tabela[2][2].value === "O"){
         tabela[0][0].style.backgroundColor = corDerrota;
         tabela[1][1].style.backgroundColor = corDerrota;
         tabela[2][2].style.backgroundColor = corDerrota;
+        tabela[0][0].style.color = corDaCelula;
+        tabela[1][1].style.color = corDaCelula;
+        tabela[2][2].style.color = corDaCelula;
         resultado.innerHTML = "Você perdeu";
     } else if(tabela[0][2].value === "O" && tabela[1][1].value === "O" && tabela[2][0].value === "O"){
         tabela[0][2].style.backgroundColor = corDerrota;
         tabela[1][1].style.backgroundColor = corDerrota;
         tabela[2][0].style.backgroundColor = corDerrota;
+        tabela[0][2].style.color = corDaCelula;
+        tabela[1][1].style.color = corDaCelula;
+        tabela[2][0].style.color = corDaCelula;
         resultado.innerHTML = "Você perdeu";
     }
 };
@@ -232,6 +280,7 @@ function novoJogo(){
             tabela[l][c].value = "";
             tabela[l][c].removeAttribute("disabled");
             tabela[l][c].style.backgroundColor = corDaCelula;
+            tabela[l][c].style.color = "black";
         }
     }
 

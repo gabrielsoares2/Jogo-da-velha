@@ -23,14 +23,14 @@
 	align-items: center;
 	justify-content: center;
 	background-color: lightslategray;
-	background-image: url("https://wallpaperwaifu.com/wp-content/uploads/2021/08/arcade-gamer-pixel-thumb.jpg");
+	background-image: url(img/papeldeparede.jpg);
 	background-position: center;
 	background-size: cover;
 	gap: 1rem;
 }
 
 .titulo {
-	font-family: var(--font-titulo);
+	font-family: var(--font-botao);
 	color: var(--cor-fonte);
 	font-size: 2rem;
 	font-weight: 600;
@@ -53,6 +53,11 @@
 	text-align: center;
 	font-family: var(--font-botao);
 	font-size: 1.2rem;
+	border: solid 1px black;
+}
+
+.celula:disabled{
+	background-color: gray;
 }
 
 #celula-1 {
@@ -112,12 +117,13 @@
 	font-size: 1.2rem;
 	padding: 5px;
 	color: var(--cor-fonte);
-	background-color: black;
+	background-color: #66BB6A;
 	cursor: pointer;
 }
 
 .botoes-click:disabled{
-	background-color: pink;
+	background-color:  #CCCCCC;
+	color: gray;
 	cursor: not-allowed;
 }
 
@@ -125,6 +131,8 @@
 	font-family: var(--font-titulo);
 	font-size: 1.2rem;
 	text-align: center;
+	background-color: black;
+	color: white;
 }
 
 @media(max-width: 1000px){
