@@ -14,19 +14,66 @@
 	padding: 0;
 }
 
-.container {
-	box-sizing: border-box;
-	height: 100vh;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: lightslategray;
+body {
 	background-image: url(img/papeldeparede.jpg);
 	background-position: center;
 	background-size: cover;
+}
+
+.cabecalho {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 0.5rem;
+	gap: 0.6rem;
+}
+
+.cabecalho-pontuacao {
+	width: 4rem;
+	height: 4rem;
+}
+
+#v {
+	text-align: center;
+	font-family: var(--font-botao);
+	font-size: 2.5rem;
+	background-color: #66BB6A;
+	color: white;
+}
+
+#d {
+	text-align: center;
+	font-family: var(--font-botao);
+	font-size: 2.5rem;
+	background-color: #D24545;
+	color: white;
+}
+
+#cabecalho-dificuldade {
+	font-family: var(--font-titulo);
+	font-size: 1rem;
+    pointer-events: auto;
+}
+
+#cabecalho-dificuldade:disabled {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	pointer-events: none;
+	background-color: white;
+	color: black;
+}
+
+.container {
+	box-sizing: border-box;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	gap: 1rem;
+	margin-top: 4rem;
+	margin-bottom: 5rem;
 }
 
 .titulo {
@@ -133,10 +180,8 @@
 	text-align: center;
 	background-color: black;
 	color: white;
-}
-
-@media(max-width: 1000px){
-
-
-
+	margin-top: auto;
+	width: 100%;
+    position: fixed;
+    bottom: 0;
 }
